@@ -1,0 +1,48 @@
+{
+  "id": "demo-cardio-2024",
+  "title": "Démo Cardiologie 2024",
+  "subject": "Médecine",
+  "ue": "UEMED0604",
+  "year": 2024,
+  "session": "Session 1",
+  "duration": 90,
+  "dossiers": [
+    {
+      "title": "Questions isolées",
+      "statement": null,
+      "questions": [
+        {
+          "id": "d1q1",
+          "number": 1,
+          "type": "QCM",
+          "statement": "A propos de l'hémodynamique cardiaque, quelle(s) proposition(s) est(sont) exacte(s) ?",
+          "items": [
+            {"letter": "A", "text": "Le débit cardiaque est le produit du volume d'éjection systolique par la fréquence cardiaque", "expected": true, "indispensable": false, "inacceptable": false, "neutralized": false},
+            {"letter": "B", "text": "La pression artérielle moyenne dépend du débit cardiaque et des résistances vasculaires", "expected": true, "indispensable": false, "inacceptable": false, "neutralized": false},
+            {"letter": "C", "text": "La fraction d'éjection normale est inférieure à 30%", "expected": false, "indispensable": false, "inacceptable": true, "neutralized": false}
+          ],
+          "correction_comment": "La fraction d'éjection normale est > 55%."
+        },
+        {
+          "id": "d1q2",
+          "number": 2,
+          "type": "QRU",
+          "statement": "Quel est le principal déterminant de la consommation d'oxyène par le myocarde ?",
+          "items": [
+            {"letter": "A", "text": "Le débit cardiaque", "expected": false},
+            {"letter": "B", "text": "La fréquence cardiaque", "expected": false},
+            {"letter": "C", "text": "La tension pariétale", "expected": true}
+          ]
+        },
+        {
+          "id": "d1q3",
+          "number": 3,
+          "type": "QROC",
+          "statement": "Citez le nom du complexe électrique visible sur l'ECG qui correspond à la dépolarisation ventriculaire.",
+          "accepted_answers": ["QRS", "Complexe QRS", "complexe QRS", "le QRS"],
+          "correction_comment": "Le complexe QRS correspond à la dépolarisation des ventricules."
+        }
+      ]
+    }
+  ]
+}

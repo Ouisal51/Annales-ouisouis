@@ -1,0 +1,53 @@
+
+
+  <header class="page-header">
+    <a href="index.html" class="back-link">◀ Retour aux matières</a>
+    <button class="btn btn-ghost btn-sm theme-toggle-btn" id="theme-btn">
+      <span id="theme-icon">🌙</span>
+    </button>
+  </header>
+
+  <main class="matiere-main">
+    <div class="matiere-header">
+      <div class="matiere-icon" id="matiere-icon">📚</div>
+      <h1 id="matiere-title">Chargement…</h1>
+      <p class="matiere-meta" id="matiere-meta"></p>
+      <p class="matiere-desc" id="matiere-desc"></p>
+    </div>
+
+    <div class="filters-bar">
+      <div class="filter-group">
+        <label>Trier par :</label>
+        <select id="sort-select">
+          <option value="year-desc">Année (récent → ancien)</option>
+          <option value="year-asc">Année (ancien → récent)</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Statut :</label>
+        <select id="status-select">
+          <option value="all">Tous</option>
+          <option value="not_started">Non commencées</option>
+          <option value="in_progress">En cours</option>
+          <option value="completed">Terminées</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="annales-list" class="annales-list">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <span>Chargement…</span>
+      </div>
+    </div>
+
+    <div id="empty-state" class="empty-state hidden">
+      <div class="empty-icon">🔍</div>
+      <p>Aucune annale ne correspond aux filtres.</p>
+    </div>
+  </main>
+
+  
+  
+  
+

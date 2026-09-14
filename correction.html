@@ -1,0 +1,64 @@
+
+
+  <header class="page-header">
+    <a href="index.html" class="back-link">◀ Retour à l'accueil</a>
+    <button class="btn btn-ghost btn-sm theme-toggle-btn" id="theme-btn">
+      <span id="theme-icon">🌙</span>
+    </button>
+  </header>
+
+  <main class="correction-main">
+    <div id="loading-state" class="loading-state">
+      <div class="spinner"></div>
+      <span>Calcul de la correction…</span>
+    </div>
+
+    <div id="results-content" class="hidden">
+      <section class="results-header">
+        <h1>📊 Résultats</h1>
+        <div class="note-globale">
+          <span class="note-value" id="note-value">0.00</span>
+          <span class="note-sur">/ 20</span>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <h3>📐 Barème R2C</h3>
+          <p><span id="points-obtenus">0.0</span> / <span id="points-total">40</span> pts</p>
+        </div>
+        <div class="stat-card">
+          <h3>✓ Questions</h3>
+          <p><span id="questions-valid">0</span> / <span id="questions-total">0</span></p>
+        </div>
+        <div class="stat-card">
+          <h3>⏱ Temps</h3>
+          <p id="temps-total">Non chronométré</p>
+        </div>
+      </section>
+
+      <section class="repartition">
+        <h2>Répartition des réponses</h2>
+        <div class="repartition-bar">
+          <div class="rep-concordantes" id="rep-concordantes"></div>
+          <div class="rep-discordantes" id="rep-discordantes"></div>
+          <div class="rep-nonrep" id="rep-nonrep"></div>
+        </div>
+        <div class="repartition-legend">
+          <span><span class="dot dot-green"></span> Concordantes: <span id="nb-concordantes">0</span></span>
+          <span><span class="dot dot-orange"></span> Discordantes: <span id="nb-discordantes">0</span></span>
+          <span><span class="dot dot-grey"></span> Non répondues: <span id="nb-nonrep">0</span></span>
+        </div>
+      </section>
+
+      <section class="correction-detaillee">
+        <h2>📋 Correction détaillée</h2>
+        <div id="questions-correction"></div>
+      </section>
+    </div>
+  </main>
+
+  
+  
+  
+

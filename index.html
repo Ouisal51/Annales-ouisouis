@@ -1,0 +1,47 @@
+
+
+  <header class="home-header">
+    <div class="home-header-brand">
+      <span class="home-header-title">📚 Plateforme de révision</span>
+      <span class="home-header-subtitle">Annales médicales</span>
+    </div>
+    <div class="home-header-actions">
+      <div class="search-wrapper" id="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Rechercher une annale..." autocomplete="off">
+        <div class="search-dropdown hidden" id="search-dropdown"></div>
+      </div>
+      <button class="btn btn-ghost btn-sm theme-toggle-btn" id="home-theme-btn">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <div id="loading-state" class="loading-state">
+      <div class="spinner"></div>
+      <span>Chargement des annales…</span>
+    </div>
+
+    <div id="main-content" class="hidden">
+      <section id="resume-section" class="resume-section hidden">
+        <h2 class="section-label">📌 Reprendre où vous en étiez</h2>
+        <div id="resume-cards" class="resume-cards"></div>
+      </section>
+
+      <section class="subjects-section">
+        <h2 class="section-label">📚 Toutes les matières</h2>
+        <div id="subjects-grid" class="subjects-grid"></div>
+        <div id="empty-state" class="empty-state hidden">
+          <div class="empty-icon">🌱</div>
+          <p>Aucune annale n'a encore été ajoutée.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  
+  
+  
+  
+

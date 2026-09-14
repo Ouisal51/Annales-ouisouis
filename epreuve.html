@@ -1,0 +1,84 @@
+
+
+  <header class="exam-header">
+    <div class="exam-header-bar">
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <h1 class="exam-header-title" id="exam-title">Épreuve</h1>
+      <span class="mode-badge" id="mode-badge">📝 Examen blanc</span>
+      
+      <div class="chrono-zone">
+        <div class="chrono-display hidden" id="chrono-display">
+          <span class="chrono-dot" id="chrono-dot"></span>
+          <span id="chrono-time">00:00:00</span>
+          <button class="btn btn-ghost btn-sm" id="chrono-pause">⏸ Pause</button>
+        </div>
+      </div>
+
+      <div class="options-zone" id="options-zone">
+        <button class="btn btn-ghost btn-sm options-btn" id="options-btn">
+          ⚙ Options
+        </button>
+        <div class="options-dropdown hidden" id="options-dropdown">
+          <label class="options-item">
+            <span>🌙 Thème sombre</span>
+            <input type="checkbox" id="theme-toggle-input">
+          </label>
+          <label class="options-item">
+            <span>⏱ Chronomètre</span>
+            <input type="checkbox" id="chrono-toggle">
+          </label>
+          <label class="options-item">
+            <span>🚀 Défilement auto</span>
+            <input type="checkbox" id="autoscroll-toggle">
+          </label>
+        </div>
+      </div>
+
+      <button class="btn btn-success btn-sm" id="btn-terminer">Terminer</button>
+    </div>
+
+    <div class="exam-progress-bar-wrap" id="exam-progress-bar-wrap">
+      <div class="exam-progress-text">
+        <span id="global-progress-text">0 / 0 validées</span>
+        <span class="exam-progress-percent" id="global-progress-pct">0%</span>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="global-progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2 class="sidebar-title">Navigation</h2>
+      <p class="sidebar-stats" id="sidebar-stats">Chargement…</p>
+      <button class="sidebar-close" id="sidebar-close">✕</button>
+    </div>
+    <div class="sidebar-body" id="sidebar-body"></div>
+    <div class="sidebar-legend">
+      <div class="legend-item"><span class="dot dot-green"></span> Validée</div>
+      <div class="legend-item"><span class="dot dot-orange"></span> En cours</div>
+      <div class="legend-item"><span class="dot dot-grey"></span> Non faite</div>
+    </div>
+    <div class="sidebar-actions">
+      <a class="btn btn-primary btn-sm" href="#" id="sidebar-correction-link">📊 Correction</a>
+      <a class="btn btn-secondary btn-sm" href="index.html">🏠 Accueil</a>
+    </div>
+  </aside>
+
+  <main class="exam-body" id="exam-body">
+    <div id="loading-state" class="loading-state">
+      <div class="spinner"></div>
+      <span>Chargement de l'épreuve…</span>
+    </div>
+    <div id="exam-main-content"></div>
+  </main>
+
+  
+  
+  
+

@@ -1,0 +1,138 @@
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.home-header-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.home-header-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.home-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.search-input {
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 250px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 200;
+}
+
+.home-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.section-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.resume-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.subject-card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border);
+}
+
+.subject-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+}
+
+.subject-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subject-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.subject-meta {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}

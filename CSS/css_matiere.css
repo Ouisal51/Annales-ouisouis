@@ -1,0 +1,105 @@
+.matiere-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.matiere-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.matiere-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.matiere-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.matiere-meta {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.matiere-desc {
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.filter-group select {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.annales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.annale-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+
+.annale-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.annale-info h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.annale-meta {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.annale-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.status-not_started { background: var(--bg-tertiary); color: var(--text-secondary); }
+.status-in_progress { background: #dbeafe; color: #1e40af; }
+.status-completed { background: #dcfce7; color: #166534; }
